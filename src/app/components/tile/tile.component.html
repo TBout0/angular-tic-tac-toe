@@ -1,6 +1,8 @@
 <button
   class="tile bg-neutral-700 inset-deep radius-15 square"
   [ngClass]="!tile.mark ? (turn === 'X' ? 'x-preview' : 'o-preview') : null"
+  [disabled]="tile.mark"
+  (click)="onClick()"
 >
   <img
     [src]="

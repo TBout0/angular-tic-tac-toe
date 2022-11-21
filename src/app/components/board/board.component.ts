@@ -8,14 +8,14 @@ import { Tile } from '../tile/Tile';
 })
 export class BoardComponent {
   public board: Tile[] = [
-    new Tile('X'),
-    new Tile('X'),
     new Tile(''),
-    new Tile('O'),
-    new Tile('O'),
     new Tile(''),
-    new Tile('X'),
-    new Tile('O'),
-    new Tile('X'),
+    new Tile(''),
+    new Tile(''),
+    new Tile(''),
+    new Tile(''),
+    new Tile(''),
+    new Tile(''),
+    new Tile(''),
   ];
 }

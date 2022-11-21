@@ -8,5 +8,13 @@ import { Tile } from './Tile';
 })
 export class TileComponent {
   @Input() tile: Tile = new Tile('');
-  public turn: string = 'O';
+  public turn: string = 'X';
+
+  onClick(): void {
+    if (!this.tile.mark) {
+      this.tile.mark = this.turn;
+    } else {
+      console.log('DISABLED');
+    }
+  }
 }
