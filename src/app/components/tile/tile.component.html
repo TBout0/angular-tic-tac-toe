@@ -1,7 +1,15 @@
 <button
   class="tile bg-neutral-700 inset-deep radius-15 square"
-  [ngClass]="turn === 'X' ? 'x-preview' : 'o-preview'"
+  [ngClass]="!tile.mark ? (turn === 'X' ? 'x-preview' : 'o-preview') : null"
 >
-  <!-- <img src="../../../assets/icon-x.svg" alt="X" /> -->
-  <!-- <img src="../../../assets/icon-o.svg" alt="O" /> -->
+  <img
+    [src]="
+      tile.mark
+        ? tile.mark === 'X'
+          ? 'assets/icon-x.svg'
+          : 'assets/icon-o.svg'
+        : null
+    "
+    [alt]="tile.mark ? (tile.mark === 'X' ? 'X' : 'O') : ''"
+  />
 </button>
