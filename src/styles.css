@@ -7,7 +7,8 @@
   --clr-primary-100: #65e9e4;
   --clr-secondary-400: #f2b137;
   --clr-secondary-100: #ffc860;
-  --clr-neutral-900: #1a2a33;
+  --clr-neutral-900: #10212a;
+  --clr-neutral-800: #1a2a33;
   --clr-neutral-700: #1f3641;
   --clr-neutral-400: #a8bfc9;
   --clr-neutral-100: #dbe8ed;
@@ -35,12 +36,23 @@ button {
   background: none;
 }
 
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: var(--clr-neutral-800);
+}
+
 /* Utility Classes */
 .square {
   aspect-ratio: 1 / 1;
 }
 
 /* Background Colors */
+.bg-neutral-800 {
+  background-color: var(--clr-neutral-800);
+}
+
 .bg-neutral-700 {
   background-color: var(--clr-neutral-700);
 }
