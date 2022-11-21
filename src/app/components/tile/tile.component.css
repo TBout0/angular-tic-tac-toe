@@ -1,0 +1,13 @@
+.tile {
+  width: 140px;
+}
+
+.x-preview:hover {
+  background: center url(../../../assets/icon-x-outline.svg) no-repeat,
+    var(--clr-neutral-700);
+}
+
+.o-preview:hover {
+  background: center url(../../../assets/icon-o-outline.svg) no-repeat,
+    var(--clr-neutral-700);
+}
