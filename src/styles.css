@@ -10,6 +10,7 @@
   --clr-neutral-900: #10212a;
   --clr-neutral-800: #1a2a33;
   --clr-neutral-700: #1f3641;
+  --clr-neutral-500: #6b8997;
   --clr-neutral-400: #a8bfc9;
   --clr-neutral-100: #dbe8ed;
 }
@@ -62,6 +63,10 @@ body {
   background-color: var(--clr-neutral-700);
 }
 
+.bg-neutral-400 {
+  background-color: var(--clr-neutral-400);
+}
+
 /* Insets */
 
 .inset-deep {
@@ -78,6 +83,10 @@ body {
 
 .inset-shallow.bg-neutral-700 {
   box-shadow: inset 0px -0.4rem 0px var(--clr-neutral-900);
+}
+
+.inset-shallow.bg-neutral-400 {
+  box-shadow: inset 0px -0.4rem 0px var(--clr-neutral-500);
 }
 
 /* Border Radius */

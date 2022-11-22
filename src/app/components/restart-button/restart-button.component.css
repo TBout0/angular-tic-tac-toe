@@ -1,0 +1,6 @@
+.restart-button {
+  width: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
