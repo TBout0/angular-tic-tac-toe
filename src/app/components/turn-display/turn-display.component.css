@@ -1,0 +1,8 @@
+.turn-display {
+  width: 140px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
+  padding: 1.3rem 1.3rem 1.7rem;
+}

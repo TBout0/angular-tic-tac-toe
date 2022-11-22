@@ -3,11 +3,15 @@
 }
 
 .x-preview:hover {
-  background: center url(../../../assets/icon-x-outline.svg) no-repeat,
+  background: url(../../../assets/icon-x-outline.svg) no-repeat,
     var(--clr-neutral-700);
+  background-position-x: center;
+  background-position-y: calc(50% - 0.4rem);
 }
 
 .o-preview:hover {
   background: center url(../../../assets/icon-o-outline.svg) no-repeat,
     var(--clr-neutral-700);
+  background-position-x: center;
+  background-position-y: calc(50% - 0.4rem);
 }

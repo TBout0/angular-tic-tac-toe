@@ -48,6 +48,11 @@ body {
   aspect-ratio: 1 / 1;
 }
 
+/* Text Colors */
+.txt-neutral-400 {
+  color: var(--clr-neutral-400);
+}
+
 /* Background Colors */
 .bg-neutral-800 {
   background-color: var(--clr-neutral-800);
@@ -59,8 +64,20 @@ body {
 
 /* Insets */
 
+.inset-deep {
+  padding-bottom: 0.8rem;
+}
+
 .inset-deep.bg-neutral-700 {
   box-shadow: inset 0px -0.8rem 0px var(--clr-neutral-900);
+}
+
+.inset-shallow {
+  padding-bottom: 0.4rem;
+}
+
+.inset-shallow.bg-neutral-700 {
+  box-shadow: inset 0px -0.4rem 0px var(--clr-neutral-900);
 }
 
 /* Border Radius */
@@ -70,4 +87,22 @@ body {
 
 .radius-10 {
   border-radius: 1rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Typography */
+.bold {
+  font-weight: 700;
+}
+
+.heading {
+  line-height: 1.25em;
+  letter-spacing: 0.0625em;
+}
+
+.xs {
+  font-size: 1.6rem;
 }
