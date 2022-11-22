@@ -44,7 +44,7 @@ export class GameService {
   changeBoardForm(board1:string[]){
     let boardz = []
     for(let z = 0; z < 3;z++){
-      boardz.push(board1[z+(z*3)],board1[z+1+(z*3)],board1[z+2+(z*3)],)
+      boardz.push([board1[z+(z*2)],board1[z+1+(z*2)],board1[z+2+(z*2)]])
     }
     return boardz
   }
